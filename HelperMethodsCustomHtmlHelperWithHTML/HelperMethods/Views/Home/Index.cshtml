@@ -1,0 +1,26 @@
+﻿@using HelperMethods.Library
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Html.Button("btnOnay", ButtonType.button, "Onay")
+        @Html.Button("btnGonder", ButtonType.button, "Gönder")
+        @Html.Button("btnIptal", "btn btn-success", ButtonType.submit, "İptal")
+        <hr />
+
+        @Html.Paragraph("p1", 2, "dashed", "Bu bir paragraf elementidir.")
+        @Html.Paragraph("p1", 4, "solid", @<text>
+            <b style="color:red;">K. Murat Başeren ile Custom Html Helpers</b>
+        </text>)
+    </div>
+</body>
+</html>
